@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Appointment App</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<style>
+  body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+}
+.heading{
+  text-align: center;
+  text-decoration: none;
+  margin: 10 0 20 0 px;
+ }
+/* .form-control {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+#email{
+  margin-left: 32px
+}  */
+
+
+
+</style>
+<body>
+  <div class="heading">
+  <h1>Book Appointment</h1>
+</div>
+    <div class="form">
+    <form onsubmit="handleFormSubmit(event)">
+      <div class="form-control">
+        <label for="username">Username
+        <input type="text" name="username" id="username" required />
+      </label><br><br>
+      </div>
+        <div class="form-control">
+        <label for="email" >Email
+        <input type="email" name="email" id="email" required />
+      </label><br><br>
+      </div>
+        <div class="form-control">
+        <label for="phone">Phone No
+        <input type="tel" name="phone" id="phone" required />
+      </label><br><br>
+      </div>
+        <button class= "btn" type="submit">Submit</button>
+    </form>
+  </div>
+    
+    <!-- Display added appointments -->
+    <ul id="appointmentsList"></ul>
+
+ <script src="index.js"></script>
+</body>
+</html>
